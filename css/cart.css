@@ -1,3 +1,7 @@
+html, body{
+    overflow: hidden;
+}
+
 .cart-main{
     display: flex;
     flex-direction: row;
@@ -14,16 +18,25 @@
 table {
     border-collapse: separate;
     border-spacing: 0 1.5rem;
+    text-align: left;
 }
 
-.cart-header{
-    text-align: left;
+.product-row td{
+    padding-right: 2rem;
 }
 
 .cart-product-img {
     width: 4rem;
     height: 4rem;
     object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.cart-product-name {
+    width: 24rem;
+    max-width: 24rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
 }
 
 .cart-price {
@@ -33,6 +46,11 @@ table {
 .cart-summary {
     font-size: 1rem;
     color: #7a736b;
+}
+
+.warning-text {
+    color: rgb(150, 0, 0);
+    font-size: 1rem;
 }
 
 .cart-summary-highlight {
