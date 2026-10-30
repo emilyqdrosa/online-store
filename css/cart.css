@@ -2,7 +2,7 @@ html, body{
     overflow: hidden;
 }
 
-.cart-main{
+main{
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -6,6 +6,12 @@ html{
     color: #494238;
 }
 
+.quantity-button{
+    border-radius: 0.6rem;
+    background-color: #fbf9f7;
+    padding: 0.4rem 0.5rem;
+}
+
 .quantity-button button{
     border: none;
     background-color: transparent;
