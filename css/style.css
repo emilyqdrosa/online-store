@@ -1,0 +1,9 @@
+html{
+    --primary: #4e2096;
+    --primary-light: #cea7f4;
+    --primary-lightest: #f5e5fd;
+}
+
+.underlined-text{
+    text-decoration: underline;
+}
