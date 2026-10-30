@@ -28,3 +28,20 @@ html{
 .underlined-text:hover{
     cursor: pointer;
 }
+
+.button {
+    padding: 0.625rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: var(--primary-lightest);
+    color: var(--primary);
+}
+
+.button:hover {
+    font-weight: bold;
+    background-color: var(--primary-lightest);
+    border: 1px solid var(--primary);
+    cursor: pointer;
+}
