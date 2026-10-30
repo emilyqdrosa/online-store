@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cart.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>Meu carrinho</title>
 </head>
+
 <body>
     <header></header>
-    <main>
+    <main class="cart-main">
         <div>
-            <h2 class="cart-title">Meu carrinho</h2>
-            <div>
+            <h2>Meu carrinho</h2>
+            <div class="cart-container">
                 <table>
                     <tr>
-                        <th class="table-header">Produto</th>
-                        <th class="table-header">Quantidade</th>
-                        <th class="table-header">Total</th>
+                        <th class="cart-header" colspan="2">Produto</th>
+                        <th class="cart-header">Quantidade</th>
+                        <th class="cart-header" colspan="2">Total</th>
                     </tr>
                     <tr>
-                        <td class="cart-img"><img src="assets/racao-cachorro.webp" alt="Foto da ração"></td>
-                        <td class="cart-product-name">Ração Premier Pet Raças Específicas Shih Tzu Adulto</td>
-                        <td></td>
+                        <td ><img class="cart-product-img" src="assets/racao-cachorro.webp" alt="Foto da ração de cachorro"></td>
+                        <td>Ração Premier Pet Raças Específicas Shih Tzu Adulto</td>
+                        <td>
+                            <div>
+                                <button>−</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </td>
                         <td class="cart-price">R$ 100</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td class="cart-img"><img src="assets/racao-gato.jpg" alt="Foto da ração"></td>
-                        <td class="cart-product-name">Ração Seca Golden Salmão para Gatos Adultos Castrados</td>
-                        <td></td>
+                        <td ><img class="cart-product-img" src="assets/racao-gato.jpg" alt="Foto da ração de gato"></td>
+                        <td>Ração Seca Golden Salmão para Gatos Adultos Castrados</td>
+                        <td>
+                            <div>
+                                <button>−</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </td>
                         <td class="cart-price">R$ 190</td>
                         <td></td>
                     </tr>
@@ -38,16 +52,19 @@
             </div>
         </div>
         <div>
-            <h2 class="cart-title">Resumo do Pedido</h2>
-            <div>
-                <p class="cart-summary">Subtotal(2 itens): R$ 290</p>
+            <h2>Resumo do Pedido</h2>
+            <div class="cart-container">
+                <p class="cart-summary-highlight">Subtotal(2 itens): R$ 290</p>
                 <p class="cart-summary">Descontos: R$ 0</p>
-                <p class="cart-summary">Frete: <p class="underlined-text">Calcular</p></p>
-                <p class="cart-summary">Total: R$ 200</p>
+                <p class="cart-summary">
+                    Frete: <span class="underlined-text cart-summary">Calcular</span>
+                </p>
+                <p class="cart-summary-highlight">Total: R$ 290</p>
                 <button class="checkout-button">Finalizar Compra</button>
             </div>
         </div>
     </main>
     <footer></footer>
 </body>
+
 </html>

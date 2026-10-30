@@ -2,8 +2,15 @@ html{
     --primary: #4e2096;
     --primary-light: #cea7f4;
     --primary-lightest: #f5e5fd;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494238;
 }
 
 .underlined-text{
     text-decoration: underline;
+}
+
+.underlined-text:hover{
+    cursor: pointer;
+    font-weight: bold;
 }
