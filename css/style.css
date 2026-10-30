@@ -6,11 +6,19 @@ html{
     color: #494238;
 }
 
+.quantity-button button{
+    border: none;
+    background-color: transparent;
+}
+
+.quantity-button button:hover{
+    cursor: pointer;
+}
+
 .underlined-text{
     text-decoration: underline;
 }
 
 .underlined-text:hover{
     cursor: pointer;
-    font-weight: bold;
 }
