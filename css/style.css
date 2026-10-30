@@ -1,20 +1,26 @@
-html{
+html {
     --primary: #4e2096;
     --primary-light: #cea7f4;
     --primary-lightest: #f5e5fd;
+    --text: #494238;
+    --text-muted: #7a736b;
+    --danger: #960000;
+    --surface: #fbf9f7;
+    --transparent: transparent;
+
     font-family: Arial, Helvetica, sans-serif;
-    color: #494238;
+    color: var(--text);
 }
 
-.quantity-button{
+.quantity-button {
     border-radius: 0.6rem;
-    background-color: #fbf9f7;
+    background-color: var(--surface);
     padding: 0.4rem 0.5rem;
 }
 
-.quantity-button button{
+.quantity-button button {
     border: none;
-    background-color: transparent;
+    background-color: var(--transparent);
 }
 
 .quantity-button button:hover{
