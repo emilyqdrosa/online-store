@@ -16,6 +16,8 @@ html {
     border-radius: 0.6rem;
     background-color: var(--surface);
     padding: 0.4rem 0.5rem;
+    width: fit-content;
+    display: inline-flex;
 }
 
 .quantity-button button {
