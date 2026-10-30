@@ -1,0 +1,10 @@
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.add-to-cart{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+}
