@@ -67,7 +67,6 @@
     display: block; 
     text-align: center;
     padding: 8px;
-    background-color: #2f6fb5;   /* azul de exemplo; troque pela cor do site */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -76,6 +75,5 @@
 }
 
 .card-info a:hover {
-    background-color: #193d63;   /* azul de exemplo; troque pela cor do site */
     color: white;
 }
