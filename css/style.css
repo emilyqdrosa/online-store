@@ -1,5 +1,6 @@
 html {
-    --primary-dark: #2e125a;
+    --primary-dark: #401880;
+    --primary-emphasis: #8d04fd;
     --primary: #4e2096;
     --primary-light: #cea7f4;
     --primary-lightest: #f5e5fd;
@@ -85,7 +86,7 @@ nav a {
 }
 
 .button:hover {
-    color: var(--primary-light);
+    color: var(--primary-emphasis);
     background-color: white;
     border: 1px solid var(--primary-dark);
     cursor: pointer;
