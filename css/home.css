@@ -1,0 +1,81 @@
+.banner img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.products img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-ad {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.ad-text, .ad-video {
+    flex: 50%;
+}
+
+.ad-video iframe {
+    width: 100%;
+    height: 210px;
+    border: none;
+}
+
+.card-info h3 {
+    font-size: 14px;
+    margin: 0, 0, 6px, 0;
+}
+
+.card-info p {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    color: darkblue;
+}
+
+.card-info a {
+    display: block; 
+    text-align: center;
+    padding: 8px;
+    background-color: #2f6fb5;   /* azul de exemplo; troque pela cor do site */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    margin-top: auto;
+}
+
+.card-info a:hover {
+    background-color: #193d63;   /* azul de exemplo; troque pela cor do site */
+    color: white;
+}
