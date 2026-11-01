@@ -1,4 +1,6 @@
 html {
+    --primary-dark: #401880;
+    --primary-emphasis: #8d04fd;
     --primary: #4e2096;
     --primary-light: #cea7f4;
     --primary-lightest: #f5e5fd;
@@ -10,6 +12,64 @@ html {
 
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #e2cde7;
+    box-shadow: 0 4px 12px rgba(78, 32, 150, 0.25);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(66, 55, 66);
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    padding: 6px 0;
+}
+
+nav a:hover {
+    color: rgb(90, 47, 90);
+}
+
+.cart-header img {
+    width: 40px;
+    height: auto;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+
+.cart-header a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: rgb(66, 55, 66);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cart-header:hover a {
+    color: rgb(90, 47, 90);
 }
 
 .quantity-button {
@@ -25,31 +85,32 @@ html {
     background-color: var(--transparent);
 }
 
-.quantity-button button:hover{
+.quantity-button button:hover {
     cursor: pointer;
 }
 
-.underlined-text{
+.underlined-text {
     text-decoration: underline;
 }
 
-.underlined-text:hover{
+.underlined-text:hover {
     cursor: pointer;
 }
 
 .button {
     padding: 0.625rem 1.5rem;
     border-radius: 1rem;
-    border: none;
+    border: 1px solid var(--primary-light);
     font-size: 1rem;
     text-transform: uppercase;
     background-color: var(--primary-lightest);
     color: var(--primary);
+    transition: 0.3s;
 }
 
 .button:hover {
-    font-weight: bold;
-    background-color: var(--primary-lightest);
-    border: 1px solid var(--primary);
+    color: var(--primary-emphasis);
+    background-color: white;
+    border: 1px solid var(--primary-dark);
     cursor: pointer;
 }

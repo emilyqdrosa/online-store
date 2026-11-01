@@ -58,6 +58,12 @@ table {
     max-width: 24rem;
     white-space: normal;
     overflow-wrap: anywhere;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.cart-product-name:hover {
+    color: var(--text-muted);
 }
 
 .cart-price {
