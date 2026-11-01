@@ -1,10 +1,25 @@
+.banner {
+    max-width: 1000px;
+    margin: 30px auto 0;
+}
+
 .banner img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 12px;
+}
+
+.home {
+    background-color: var(--surface);
+    background-repeat: repeat;
+    background-image: url("../assets/patinha.svg");
+    position: relative;
+    background-size: 900px;
 }
 
 .card {
+    background-color: white;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -20,12 +35,22 @@
     padding: 12px;
 }
 
+.products-section {
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin: 0 0 24px 0;
+    margin-top: 30px;
+    background-color: var(--primary-lightest);
+    padding: 50px 0;
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .products img {
@@ -34,12 +59,17 @@
     display: block;
 }
 
+.ad-section {
+    padding: 50px 0;
+    margin-top: 40px;
+}
+
 .product-ad {
     display: flex;
     align-items: center;
     gap: 30px;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .ad-text,
@@ -49,8 +79,30 @@
 
 .ad-video iframe {
     width: 100%;
-    height: 210px;
+    aspect-ratio: 16 / 9;
     border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.ad-text {
+    background-color: var(--surface);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-left: 6px solid var(--primary);
+}
+
+.ad-text h2 {
+    color: var(--primary);
+    font-size: 19px;
+    margin: 0 0 12px 0;
+}
+
+.ad-text p {
+    line-height: 1.6;
+    color: var(--text);
+    margin: 0;
 }
 
 .card-info h3 {
@@ -75,8 +127,6 @@
     border-radius: 11px;
     display: block;
     text-align: center;
-    padding: 8px;
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    margin-top: auto;
 }
