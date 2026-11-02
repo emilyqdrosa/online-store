@@ -22,12 +22,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 40px;
+    padding: 22px max(40px, calc((100% - 1280px) / 2));
     background-color: #e2cde7;
     box-shadow: 0 4px 12px rgba(78, 32, 150, 0.25);
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+.logo-header img{
+    height: 36px;
+    width: auto;
+    display: block;
 }
 
 nav ul {
@@ -40,7 +46,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: rgb(66, 55, 66);
     font-weight: bold;
     transition: 0.3s;
@@ -52,11 +58,50 @@ nav a:hover {
     color: rgb(90, 47, 90);
 }
 
+.search {
+    position: relative;
+}
+
+.search input {
+    width: 280px;
+    height: 45px;
+    padding: 8px 40px 8px 16px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    font-size: 0.95rem;
+    background-color: white;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 18px;
+    height: auto;
+}
+
+.search input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-lightest);
+}
+
 .cart-header img {
-    width: 48px;
+    width: 30px;
     height: auto;
     margin-left: -10px;
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
 .cart-header a {
@@ -72,6 +117,30 @@ nav a:hover {
 
 .cart-header:hover a {
     color: rgb(90, 47, 90);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.login-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(66, 55, 66);
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.login-header:hover {
+    background-color: var(--primary-lightest);
 }
 
 .quantity-button {
