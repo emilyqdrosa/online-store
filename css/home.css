@@ -78,13 +78,9 @@ html {
     max-width: 1000px;
     margin: 0 auto;
     background-color: var(--surface);
-    /* NOVO (veio do .ad-text) */
     padding: 30px;
-    /* NOVO (veio do .ad-text) */
     border-radius: 12px;
-    /* NOVO (veio do .ad-text) */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    /* NOVO (veio do .ad-text) */
     border-left: 6px solid var(--primary);
 }
 
