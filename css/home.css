@@ -42,10 +42,14 @@ html {
     font-size: 1.8rem;
     margin: 0 0 24px 0;
     margin-top: 30px;
-    padding: 50px 0;
+    padding: 30px 0 50px 0;
     position: relative;
     background-color: var(--primary-light-products);
     border-radius: 1%;
+}
+
+.products-section h2 {
+    margin: 0 0 24px 0;
 }
 
 .products {
@@ -73,10 +77,14 @@ html {
     gap: 30px;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: var(--surface);            /* NOVO (veio do .ad-text) */
-    padding: 30px;                               /* NOVO (veio do .ad-text) */
-    border-radius: 12px;                         /* NOVO (veio do .ad-text) */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);   /* NOVO (veio do .ad-text) */
+    background-color: var(--surface);
+    /* NOVO (veio do .ad-text) */
+    padding: 30px;
+    /* NOVO (veio do .ad-text) */
+    border-radius: 12px;
+    /* NOVO (veio do .ad-text) */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    /* NOVO (veio do .ad-text) */
     border-left: 6px solid var(--primary);
 }
 
@@ -93,9 +101,7 @@ html {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.ad-text {
-    
-}
+.ad-text {}
 
 .ad-text h2 {
     color: var(--primary);
