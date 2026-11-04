@@ -12,19 +12,35 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#">Rações</a></li>
-                <li><a href="#">Higiene</a></li>
-            </ul>
-        </nav>
 
-        <div class="cart-header">
-            <a href="cart.html">
-                Meu carrinho
-                <img src="assets/carrinho-icone.png" alt="Ícone do carrinho">
+        <div class="logo-header">
+            <a href="index.html" aria-label="Ir para o Início">
+                <img src="assets/logo.png" alt="Logo">
             </a>
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="O que você procura?" aria-label="Buscar produtos">
+            <button type="button" class="search-btn">
+                <img src="assets/lupa.svg" alt="Buscar">
+            </button>
+        </div>
+
+
+        <div class="header-right">
+
+            <a href="#" class="login-header" aria-label="Entrar ou cadastrar">
+                <img src="assets/pessoa.svg" alt="">
+                <span class="label">Entrar | Cadastrar</span>
+            </a>
+
+            <div class="cart-header">
+                <a href="cart.html">
+                    <span class="label">Meu carrinho</span>
+                    <img src="assets/carrinho-icone.png" alt="Carrinho">
+                </a>
+            </div>
+
         </div>
     </header>
     <main>
@@ -39,7 +55,7 @@
                     </tr>
                     <tr class="product-row">
                         <td> <a href="product-cart.html"><img class="cart-product-img" src="assets/cachorro.webp" alt="Foto da ração de cachorro"></a></td>
-                        <td> <a class="cart-product-name" href="product-cart.html">Ração Premier Pet Raças Específicas Shih Tzu Adulto</a></td>
+                        <td> <a href="product-cart.html" class="cart-product-name">Ração Premier Pet Raças Específicas Shih Tzu Adulto</a></td>
                         <td>
                             <div class="quantity-button">
                                 <button>−</button>
@@ -47,12 +63,12 @@
                                 <button>+</button>
                             </div>
                         </td>
-                        <td class="cart-price">R$ 100</td>
+                        <td class="cart-price">R$ 99.90</td>
                         <td><span class="underlined-text warning-text">Deletar</span></td>
                     </tr>
                     <tr class="product-row">
-                        <td><img class="cart-product-img" src="assets/gato.webp" alt="Foto da ração de gato"></td>
-                        <td class="cart-product-name">Ração Seca Golden Salmão para Gatos Adultos Castrados</td>
+                        <td> <a href="product-cart-2.html"> <img class="cart-product-img" src="assets/gato.webp" alt="Foto da ração de gato"></a></td>
+                        <td> <a href="product-cart-2.html" class="cart-product-name">Ração Seca Golden Salmão para Gatos Adultos Castrados</a></td>
                         <td>
                             <div class="quantity-button">
                                 <button>−</button>
@@ -69,12 +85,12 @@
         <div class="order-summary">
             <h2>Resumo do Pedido</h2>
             <div class="cart-container">
-                <p class="cart-summary-highlight">Subtotal(2 itens): R$ 290</p>
+                <p class="cart-summary-highlight">Subtotal(2 itens): R$ 289.90</p>
                 <p class="cart-summary">Descontos: R$ 0</p>
                 <p class="cart-summary">
                     Frete: <span class="underlined-text cart-summary">Calcular</span>
                 </p>
-                <p class="cart-summary-highlight">Total: R$ 290</p>
+                <p class="cart-summary-highlight">Total: R$ 289.90</p>
                 <button class="button">Finalizar Compra</button>
             </div>
         </div>  
