@@ -130,6 +130,7 @@ html {
 
 .card-info h3 a {
     text-decoration: none;
+    color: var(--primary)
 }
 
 .card-info h3 a:hover {
