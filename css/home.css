@@ -134,7 +134,7 @@ html {
 }
 
 .card-info h3 a:hover {
-    color: var(--primary);
+    color: purple;
 }
 
 .card-info p {
