@@ -105,18 +105,26 @@ html {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.ad-text {}
-
 .ad-text h3 {
     color: var(--primary);
-    font-size: 25px;
+    font-size: 2.0rem;
     margin: 0 0 12px 0;
 }
 
+.ad-text {
+    align-self: flex-start;
+}
+
 .ad-text p {
+    font-size: 1.3rem;
     line-height: 1.6;
     color: var(--text);
     margin: 0;
+    hyphens: auto;
+}
+
+.ad-text strong {
+    color: var(--primary);
 }
 
 .card-info h3 {
@@ -126,6 +134,15 @@ html {
     min-height: calc(1.3em * 3);
 }
 
+.card-info h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-info h3 a:hover {
+    color: var(--primary);
+}
+
 .card-info p {
     font-size: 16px;
     font-weight: bold;
@@ -133,7 +150,7 @@ html {
     margin: 0 0 12px 0;
 }
 
-.card-info a {
+.card-info .button {
     align-self: center;
     margin-top: auto;
     padding: 0.4rem 1.5rem;
