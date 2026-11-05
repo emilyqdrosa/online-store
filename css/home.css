@@ -17,7 +17,6 @@ html {
 
 .home {
     background-color: var(--surface);
-    background-repeat: repeat;
 }
 
 .card {
