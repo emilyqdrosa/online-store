@@ -98,7 +98,7 @@ table {
         overflow-x: visible;
     }
 
-    /* esconde o cabeçalho da tabela */
+
     table tr:first-child {
         display: none;
     }
@@ -139,6 +139,6 @@ table {
     .cart-product-name {
         width: auto;
         max-width: 100%;
-        overflow-wrap: break-word; /* quebra por palavra, não por letra */
+        overflow-wrap: break-word; 
     }
 }
